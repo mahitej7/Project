@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticketing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Issue Ticketing System</h2>
+        <div class="input-section">
+            <input type="text" id="name" placeholder="Enter Your Name">
+            <textarea id="description" placeholder="Describe your issue"></textarea>
+            <button onclick="generateTicket()">Submit</button>
+        </div>
+        <div class="ticket-list">
+            <h3>Tickets</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ticket ID</th>
+                        <th>Name</th>
+                        <th>Issue</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="ticketTable">
+                    <!-- Tickets will be added here dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
